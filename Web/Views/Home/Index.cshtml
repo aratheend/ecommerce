@@ -119,14 +119,14 @@
         <div class="row">
             @foreach (var product in Model.Products)
             {
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center card-data">
                     <div class="single-product-item">
                         <div class="product-image">
-                            <a href="single-product.html"><img src="@product.PhotoUrl" alt=""></a>
+                            <a href="/product/detail/@product.Id"><img class="product-photo" src="@product.PhotoUrl" alt=""></a>
                         </div>
-                        <h3>@product.Name</h3>
+                        <h3 class="product-name">@product.Name</h3>
                         <p class="product-price">@product.Price ₼ </p>
-                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <a class="cart-btn add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                     </div>
                 </div>
             }
@@ -295,3 +295,36 @@
     </div>
 </div>
 <!-- end latest news -->
+
+@section Scripts {
+    <script>
+        const button = document.querySelectorAll(".add-to-cart")
+        const productName = document.querySelectorAll(".product-name")
+        const productPrice = document.querySelectorAll(".product-price")
+        const productPhoto = document.querySelectorAll(".product-photo")
+
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("click", function () {
+                AddToLs(productName[i].innerText, productPrice[i].innerText, productPhoto[i].currentSrc)
+            })
+        }
+
+        function AddToLs(name, price, photoUrl) {
+            let data = {
+                name: name,
+                price: price,
+                photo: photoUrl,
+                quantity: 1
+            }
+            var cartItems = JSON.parse(localStorage.getItem("card"))
+
+            if (cartItems == null) {
+                localStorage.setItem("card", JSON.stringify([data]))
+            }
+            else {
+                localStorage.setItem("card", JSON.stringify([...cartItems,data]))
+            }
+        }
+        
+    </script>
+}

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Web.csproj": {}
+    "/Users/araz/Desktop/back/K101Ecommerce/Web/Web.csproj": {}
   },
   "projects": {
-    "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Web.csproj": {
+    "/Users/araz/Desktop/back/K101Ecommerce/Web/Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Web.csproj",
+        "projectUniqueName": "/Users/araz/Desktop/back/K101Ecommerce/Web/Web.csproj",
         "projectName": "Web",
-        "projectPath": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Web.csproj",
-        "packagesPath": "/Users/sanan/.nuget/packages/",
-        "outputPath": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/obj/",
+        "projectPath": "/Users/araz/Desktop/back/K101Ecommerce/Web/Web.csproj",
+        "packagesPath": "/Users/araz/.nuget/packages/",
+        "outputPath": "/Users/araz/Desktop/back/K101Ecommerce/Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sanan/.nuget/NuGet/NuGet.Config"
+          "/Users/araz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

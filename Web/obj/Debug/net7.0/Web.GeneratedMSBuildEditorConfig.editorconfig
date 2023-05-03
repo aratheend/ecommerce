@@ -9,105 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web
 build_property.RootNamespace = Web
-build_property.ProjectDir = /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/
+build_property.ProjectDir = /Users/araz/Desktop/back/K101Ecommerce/Web/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web
+build_property.MSBuildProjectDirectory = /Users/araz/Desktop/back/K101Ecommerce/Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Article/Create.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Article/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0FydGljbGUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Article/Index.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Article/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0FydGljbGUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Auth/Login.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0F1dGgvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Auth/Register.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0F1dGgvUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Category/Create.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0NhdGVnb3J5L0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Category/Index.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0NhdGVnb3J5L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Home/Index.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0hvbWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Create.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Byb2R1Y3QvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Delete.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Byb2R1Y3QvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Index.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Byb2R1Y3QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Update.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Byb2R1Y3QvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Shared/_AdminLayout.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1NoYXJlZC9fQWRtaW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/Shared/_AuthLayout.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1NoYXJlZC9fQXV0aExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/_ViewImports.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL19WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Areas/Dashboard/Views/_ViewStart.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL19WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Article/Detail.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Article/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aWNsZS9EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Home/Error.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Home/Index.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Home/Privacy.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Shared/Error.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/_ViewImports.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/_ViewStart.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/K101Ecommerce/Web/Views/Shared/_Layout.cshtml]
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-znl52p88st

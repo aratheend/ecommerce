@@ -19,7 +19,7 @@ builder.Services.AddDefaultIdentity<User>().AddRoles<IdentityRole>()
 
 var app = builder.Build();
 
-app.UseExceptionHandler("/Home/Error");
+//app.UseExceptionHandler("/Home/Error");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
