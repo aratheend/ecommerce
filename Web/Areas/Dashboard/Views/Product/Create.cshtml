@@ -5,7 +5,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Create product</h6>
     </div>
     <div class="card-body">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label asp-for="Name" class="form-label"></label>
                 <input class="form-control" asp-for="Name" />
@@ -24,7 +24,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="PhotoUrl" class="form-label"></label>
-                <input class="form-control" asp-for="PhotoUrl" />
+                <input class="form-control" type="file" name="Photo" />
+                @*<input class="form-control" type="file" name="Photo" />*@
             </div>
             <div class="mb-3">
                 <label asp-for="CategoryId" class="form-label"></label>

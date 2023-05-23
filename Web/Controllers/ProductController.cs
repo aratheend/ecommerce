@@ -21,6 +21,19 @@ namespace Web.Controllers
             _context = context;
         }
 
+
+        public IActionResult Index()
+        {
+            var products = _context.Products.ToList();
+            var categories = _context.Categories.ToList();
+            ShopVM vm = new()
+            {
+                Products=products,
+                Categories=categories
+            };
+            return View(vm);
+        }
+
         // GET: /<controller>/
         public IActionResult Detail(int id)
         {
@@ -33,6 +46,7 @@ namespace Web.Controllers
             };
             return View(vm);
         }
+
     }
 }
 

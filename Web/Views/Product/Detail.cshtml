@@ -19,19 +19,17 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="single-product-img">
-                        <img src="@Model.Product.PhotoUrl" alt="">
+                        <img class="product_image" src="@Model.Product.PhotoUrl" alt="">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="single-product-content">
-                        <h3>@Model.Product.Name</h3>
+                        <h3 class="product_name">@Model.Product.Name</h3>
                         <p class="single-product-pricing"><span>Ədəd</span> $@Model.Product.Price</p>
                         <p>@Model.Product.Description</p>
                         <div class="single-product-form">
-                            <form action="index.html">
-                                <input type="number" placeholder="0">
-                            </form>
-                            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Səbətə əlavə edin</a>
+                                <input class="productQuantity" type="number" placeholder="0">
+                            <a onclick="AddToCart(@Model.Product.Id)" class="cart-btn"><i class="fas fa-shopping-cart"></i> Səbətə əlavə edin</a>
                             <p><strong>Categories: </strong>@Model.Product.Category.CategoryName</p>
                         </div>
                         <h4>Share:</h4>
@@ -77,6 +75,47 @@
             </div>
         </div>
     </div>
+
+@section Scritps {
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        if (getCookie("products") == null) {
+            document.cookie = "products=" + JSON.stringify([])
+        }
+
+
+        function AddToCart(id) {
+            let cart = document.getElementById(`cart_${id}`)
+            let image = document.querySelector(".product_image").getElementsByTagName("img")[0].currentSrc
+            let name = document.querySelector(`.product_name`).innerText
+            let price = document.querySelector(`.single-product-pricing`).innerText
+            let quantity = document.querySelector(".productQuantity");
+            let cartItem = { id, image, name, price: parseInt(price.replace(" ₼", "")), parseInt(quantity.value) };
+            let currentCookie = JSON.parse(getCookie("products"));
+
+            let findProduct = currentCookie.length != 0 ? currentCookie.filter(x => x.id == id) : []
+
+            if (findProduct.length != 0) {
+                currentCookie.filter(x => x.id == id).map(data => {
+                    data.quantity += 1;
+                })
+                document.cookie = "products=" + JSON.stringify(currentCookie)
+            } else {
+                document.cookie = "products=" + JSON.stringify([...currentCookie, cartItem])
+            }
+            Swal.fire(
+                'Səbətə əlavə olundu!',
+                '',
+                'success'
+            )
+        }
+    </script>
+}
+
 
 
 

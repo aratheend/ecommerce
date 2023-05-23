@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Social>
+
+<a href="/dashboard/social/create" class="btn btn-success">Create</a>
+
+@foreach (var social in Model)
+    {
+        <p><i class="@social.Icon"></i></p>
+    }

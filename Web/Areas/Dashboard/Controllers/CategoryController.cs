@@ -36,6 +36,21 @@ namespace Web.Areas.Dashboard.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var categories = _context.Categories.SingleOrDefault(x => x.Id == id);
+            return View(categories);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Category category)
+        {
+            _context.Categories.Update(category);
+            _context.SaveChanges();
+            return RedirectToAction("Index");        
+        }
+
     }
 
 }

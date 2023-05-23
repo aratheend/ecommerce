@@ -21,6 +21,14 @@
     <None Remove="ViewModels\" />
     <None Remove="Views\Article\" />
     <None Remove="Views\Product\" />
+    <None Remove="Views\Cart\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Views\News\" />
+    <None Remove="Helpers\" />
+    <None Remove="Areas\Dashboard\Views\Social\" />
+    <None Remove="Areas\Dashboard\Views\Team\" />
+    <None Remove="Areas\Dashboard\Views\Position\" />
+    <None Remove="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -37,6 +45,14 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Article\" />
     <Folder Include="Views\Product\" />
+    <Folder Include="Views\Cart\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\News\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Areas\Dashboard\Views\Social\" />
+    <Folder Include="Areas\Dashboard\Views\Team\" />
+    <Folder Include="Areas\Dashboard\Views\Position\" />
+    <Folder Include="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />

@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0FydGljbGUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Article/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0FydGljbGUvVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0F1dGgvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,8 +44,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0NhdGVnb3J5L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0NhdGVnb3J5L1VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL0hvbWUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Position/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Bvc2l0aW9uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Position/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Bvc2l0aW9uL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Position/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Bvc2l0aW9uL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Position/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1Bvc2l0aW9uL1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Product/Create.cshtml]
@@ -68,6 +92,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1NoYXJlZC9fQXV0aExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Social/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1NvY2lhbC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Social/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1NvY2lhbC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Team/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1RlYW0vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Team/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1RlYW0vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/Team/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL1RlYW0vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Areas/Dashboard/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL19WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,8 +120,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL19WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Article/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aWNsZS9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Article/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aWNsZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9DaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Home/Error.cshtml]
@@ -92,8 +156,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV3cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/araz/Desktop/back/K101Ecommerce/Web/Views/Shared/Error.cshtml]

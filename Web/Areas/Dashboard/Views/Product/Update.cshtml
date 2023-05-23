@@ -5,7 +5,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Create product</h6>
     </div>
     <div class="card-body">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label asp-for="Product.Name" class="form-label"></label>
                 <input class="form-control" asp-for="Product.Name" />
@@ -24,7 +24,8 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Product.PhotoUrl" class="form-label"></label>
-                <input class="form-control" asp-for="Product.PhotoUrl" />
+                <input class="form-control" name="updatedPhoto" type="file" />
+                <input type="hidden" name="Product.PhotoUrl" value="@Model.Product.PhotoUrl"/>
                 <div class="col-lg-3">
                     <img class="img-fluid my-3" src="@Model.Product.PhotoUrl" />
                 </div>
@@ -49,7 +50,7 @@
                 <textarea class="form-control" asp-for="Product.Description" rows="10"></textarea>
             </div>
 
-            <input class="btn btn-success mt-3" type="submit" value="Create" />
+            <input class="btn btn-success mt-3" type="submit" value="Update" />
         </form>
     </div>
 </div>

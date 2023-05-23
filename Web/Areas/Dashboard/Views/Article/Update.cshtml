@@ -1,0 +1,35 @@
+﻿@model Article
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Create product</h6>
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label"></label>
+                <input class="form-control" asp-for="Title" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input class="form-control" asp-for="Description" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="SeoUrl" class="form-label"></label>
+                <input class="form-control" asp-for="SeoUrl" />
+            </div><div class="mb-3">
+                <label asp-for="SeoUrl" class="form-label"></label>
+                <input class="form-control" asp-for="SeoUrl" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="UpdatedDate" class="form-label"></label>
+                <input class="form-control" asp-for="UpdatedDate" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="PhotoUrl" class="form-label"></label>
+                <input class="form-control" asp-for="PhotoUrl" />
+            </div>
+            <input class="btn btn-success mt-3" type="submit" value="Update" />
+        </form>
+    </div>
+</div>

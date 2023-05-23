@@ -269,6 +269,22 @@ namespace Web.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("Web.Models.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("PositionName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Positions");
+                });
+
             modelBuilder.Entity("Web.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -280,11 +296,17 @@ namespace Web.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CoverPhoto")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Discount")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsSlider")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -308,6 +330,25 @@ namespace Web.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Web.Models.Social", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BaseUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Socials");
+                });
+
             modelBuilder.Entity("Web.Models.Tag", b =>
                 {
                     b.Property<int>("Id")
@@ -322,6 +363,59 @@ namespace Web.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("Web.Models.Team", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PositionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SurName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PositionId");
+
+                    b.ToTable("Teams");
+                });
+
+            modelBuilder.Entity("Web.Models.TeamSocial", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("SocialId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeamId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SocialId");
+
+                    b.HasIndex("TeamId");
+
+                    b.ToTable("TeamSocials");
                 });
 
             modelBuilder.Entity("Web.Models.User", b =>
@@ -488,6 +582,36 @@ namespace Web.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Web.Models.Team", b =>
+                {
+                    b.HasOne("Web.Models.Position", "Position")
+                        .WithMany()
+                        .HasForeignKey("PositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Position");
+                });
+
+            modelBuilder.Entity("Web.Models.TeamSocial", b =>
+                {
+                    b.HasOne("Web.Models.Social", "Social")
+                        .WithMany()
+                        .HasForeignKey("SocialId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Web.Models.Team", "Team")
+                        .WithMany("TeamSocials")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Social");
+
+                    b.Navigation("Team");
+                });
+
             modelBuilder.Entity("Web.Models.Article", b =>
                 {
                     b.Navigation("ArticleTags");
@@ -496,6 +620,11 @@ namespace Web.Migrations
             modelBuilder.Entity("Web.Models.Tag", b =>
                 {
                     b.Navigation("ArticleTags");
+                });
+
+            modelBuilder.Entity("Web.Models.Team", b =>
+                {
+                    b.Navigation("TeamSocials");
                 });
 #pragma warning restore 612, 618
         }

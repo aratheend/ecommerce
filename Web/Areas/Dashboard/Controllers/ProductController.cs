@@ -19,10 +19,12 @@ namespace Web.Areas.Dashboard.Controllers
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public ProductController(AppDbContext context)
+        public ProductController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         // GET: /<controller>/
@@ -42,12 +44,21 @@ namespace Web.Areas.Dashboard.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Product product)
+        public async Task<IActionResult> Create(Product product, IFormFile Photo)
         {
+            var path = "/uploads/" + DateTime.Now.ToString("MM-dd-yyyy") + "_" + Guid.NewGuid() + Path.GetExtension(Photo.FileName);
+
+            using (var fileStream = new FileStream(_env.WebRootPath + path, FileMode.Create))
+            {
+                Photo.CopyTo(fileStream);
+            }
+
+
             var myUrl = product.Name
                 .ToLower()
                 .Replace(" ", "-");
             product.SeoUrl = myUrl;
+            product.PhotoUrl = path;
             _context.Products.Add(product);
             _context.SaveChanges();
             return RedirectToAction("Index");
@@ -70,8 +81,10 @@ namespace Web.Areas.Dashboard.Controllers
 
 
         [HttpPost]
-        public IActionResult Update(Product product, int id, int CategoryId)
+        public IActionResult Update(Product product, int id, int CategoryId, IFormFile updatedPhoto)
         {
+            
+
             var myUrl = product.Name
                 .ToLower()
                 .Replace(" ", "-");
@@ -81,9 +94,23 @@ namespace Web.Areas.Dashboard.Controllers
             updatedProduct.Discount = product.Discount;
             updatedProduct.Description = product.Description;
             updatedProduct.Quantity = product.Quantity;
-            updatedProduct.PhotoUrl = product.PhotoUrl;
             updatedProduct.SeoUrl = myUrl;
             updatedProduct.CategoryId = CategoryId;
+
+            if (updatedPhoto != null)
+            {
+                var path = "/uploads/" + DateTime.Now.ToString("MM-dd-yyyy") + "_" + Guid.NewGuid() + Path.GetExtension(updatedPhoto.FileName);
+
+                using (var fileStream = new FileStream(_env.WebRootPath + path, FileMode.Create))
+                {
+                    updatedPhoto.CopyTo(fileStream);
+                }
+                updatedProduct.PhotoUrl = path;
+            }
+            else
+            {
+                updatedProduct.PhotoUrl = product.PhotoUrl;
+            }
 
             _context.Products.Update(updatedProduct);
             _context.SaveChanges();

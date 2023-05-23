@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Position>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">
+            <a href="/dashboard/position/create">Create</a>
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>PositionName</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @*<tfoot>
+                    <tr>
+                        <th>PositionName</th>
+                        <th></th>
+                    </tr>
+                </tfoot>*@
+                <tbody>
+                    @foreach (var pos in Model)
+                    {
+                        <tr>
+                            <td>@pos.PositionName</td>
+                            <td>
+                                <a class="btn btn-warning btn-sm" href="/dashboard/position/update/@pos.Id">Edit</a>
+                                <a class="btn btn-danger btn-sm" href="/dashboard/position/delete/@pos.Id">Remove</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- /.container-fluid -->

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Data;
+using Web.Helpers;
 using Web.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -48,6 +49,7 @@ namespace Web.Areas.Dashboard.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Article article, List<int> tagIds, IFormFile Photo)
         {
+            
 
             var tags = _context.Tags.ToList();
             ViewBag.Tags = new SelectList(tags, "Id", "TagName");
@@ -73,7 +75,7 @@ namespace Web.Areas.Dashboard.Controllers
                 article.PhotoUrl = path;
                 article.CreatedDate = DateTime.Now;
                 article.UpdatedDate = DateTime.Now;
-                article.SeoUrl = "234";
+                article.SeoUrl = SeoHelper.SeoUrlCreator(article.Title);
 
 
                 await _context.Articles.AddAsync(article);

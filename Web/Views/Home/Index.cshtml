@@ -1,6 +1,5 @@
 ﻿@model HomeVM
-
-  <!-- home page slider -->
+<!-- home page slider -->
 <div class="homepage-slider">
     <!-- single home slider -->
     <div class="single-homepage-slider homepage-bg-1">
@@ -119,14 +118,15 @@
         <div class="row">
             @foreach (var product in Model.Products)
             {
-                <div class="col-lg-4 col-md-6 text-center card-data">
+                <div id="cart_@product.Id" class="col-lg-4 col-md-6 text-center card-data">
+                    <span style="display: none" class="product-id">@product.Id</span>
                     <div class="single-product-item">
                         <div class="product-image">
                             <a href="/product/detail/@product.Id"><img class="product-photo" src="@product.PhotoUrl" alt=""></a>
                         </div>
-                        <h3 class="product-name">@product.Name</h3>
-                        <p class="product-price">@product.Price ₼ </p>
-                        <a class="cart-btn add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                        <h3 id="product_name_@product.Id" class="product-name">@product.Name</h3>
+                        <p id="product_price_@product.Id" class="product-price">@product.Price ₼ </p>
+                        <a onclick="AddToCart(@product.Id)" class="cart-btn add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                     </div>
                 </div>
             }
@@ -277,8 +277,8 @@
                                 <span class="author"><i class="fas fa-user"></i> @article.User.Name</span>
                                 <span class="date"><i class="fas fa-calendar"></i> @article.CreatedDate.ToString("dd MM yyyy")</span>
                             </p>
-                            <p class="excerpt">@Html.Raw(article.Description.Substring(0,100)) ...</p>
-                            <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                            <p class="excerpt">@Html.Raw(article.Description.Substring(0, 100)) ...</p>
+                            <a href="/article/detail/@article.Id" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -297,34 +297,49 @@
 <!-- end latest news -->
 
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+
     <script>
-        const button = document.querySelectorAll(".add-to-cart")
-        const productName = document.querySelectorAll(".product-name")
-        const productPrice = document.querySelectorAll(".product-price")
-        const productPhoto = document.querySelectorAll(".product-photo")
 
-        for (let i = 0; i < button.length; i++) {
-            button[i].addEventListener("click", function () {
-                AddToLs(productName[i].innerText, productPrice[i].innerText, productPhoto[i].currentSrc)
-            })
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        if (getCookie("products") == null) {
+            document.cookie = "products=" + JSON.stringify([])
         }
 
-        function AddToLs(name, price, photoUrl) {
-            let data = {
-                name: name,
-                price: price,
-                photo: photoUrl,
-                quantity: 1
-            }
-            var cartItems = JSON.parse(localStorage.getItem("card"))
 
-            if (cartItems == null) {
-                localStorage.setItem("card", JSON.stringify([data]))
+        function AddToCart(id) {
+            let cart = document.getElementById(`cart_${id}`)
+            let image = cart.getElementsByTagName("img")[0].currentSrc
+            let name = document.getElementById(`product_name_${id}`).innerText
+            let price = document.getElementById(`product_price_${id}`).innerText
+            let quantity = 1;
+            let cartItem = { id, image, name, price: parseInt(price.replace(" ₼", "")), quantity };
+            let currentCookie = JSON.parse(getCookie("products"));
+
+            let findProduct = currentCookie.length != 0 ? currentCookie.filter(x => x.id == id) : []
+
+            if (findProduct.length != 0) {
+                currentCookie.filter(x => x.id == id).map(data => {
+                    data.quantity += 1;
+                })
+                document.cookie = "products=" + JSON.stringify(currentCookie)
+            } else {
+                document.cookie = "products=" + JSON.stringify([...currentCookie, cartItem])
             }
-            else {
-                localStorage.setItem("card", JSON.stringify([...cartItems,data]))
-            }
+            Swal.fire(
+                'Səbətə əlavə olundu!',
+                '',
+                'success'
+            )
         }
-        
+
     </script>
+
 }
